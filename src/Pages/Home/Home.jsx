@@ -1,9 +1,12 @@
+import Banner from "../../Component/Navbar/Banner/Banner";
+import Beneficiaries from "../../Component/Navbar/Beneficiaries/Beneficiaries";
 
 
 const Home = () => {
     return (
         <div>
-           <h1>homeee</h1> 
+           <Banner></Banner>
+           <Beneficiaries></Beneficiaries> 
         </div>
     );
 };
