@@ -56,7 +56,7 @@ const Navbar = () => {
           
           <div className="space-y-5 py-3 px-1">
           <p className="text-white font-semibold font-lg">{user.displayName}</p>
-          <p><Link className="text-white font-semibold font-lg" to ="/dashboard">Dashboard</Link></p>
+          <p><Link className="text-white font-semibold font-lg" to ="dashboard">Dashboard</Link></p>
           <li ><button className=" font-semibold btn bg-white border-0 border-y-4 border-orange-600 p-3 font-lg " onClick={handleSignOut}>Log out</button></li>
     
           </div>      

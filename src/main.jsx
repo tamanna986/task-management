@@ -12,6 +12,8 @@ import LogIn from './Pages/LogIn/LogIn';
 import AboutUs from './Pages/Home/AboutUs/AboutUs';
 import Review from './Pages/Review/Review';
 import AuthProvider from './Provider/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import DashboardLayOut from './LayOut/DashboardLayOut';
 
 const router = createBrowserRouter([
   {
@@ -39,7 +41,12 @@ const router = createBrowserRouter([
         element: <Review></Review>
       },
       
+      
     ]
+  },
+  {
+    path: "dashboard",
+    element: <PrivateRoute><DashboardLayOut></DashboardLayOut></PrivateRoute>
   },
 ]);
 

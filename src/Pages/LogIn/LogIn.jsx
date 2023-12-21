@@ -35,6 +35,8 @@ const LogIn = () => {
                     }
                 });
                 navigate(from, { replace: true });
+                navigate('/dashboard');
+
             })
     }
 
@@ -66,7 +68,7 @@ const LogIn = () => {
               
       // to go to desired page using navigate
               navigate(from, { replace: true });
-                navigate('/');
+                navigate('/dashboard');
 
             })
             .catch(error => {
