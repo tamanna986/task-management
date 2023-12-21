@@ -1,11 +1,17 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
-     
+  const { user, logOut } = useContext(AuthContext)
+  const handleSignOut = () => {
+    logOut();
+  }  
   const LeftNavLink = <>
      <Link to = "/"><li className="text-white text-lg"><a>Home</a></li></Link>
      <Link to = "/about"><li className="text-white text-lg"><a>About Us</a></li></Link>
      <Link to = "/review"><li className="text-white text-lg"><a>Review</a></li></Link>
+
   </>
 
 
@@ -35,9 +41,36 @@ const Navbar = () => {
     <img className="w-60 md:w-80  " src="https://i.ibb.co/Kjx1qNK/l1-removebg-preview-3.png" alt="" />
   </div>
   <div className="navbar-end">
-    <Link to = "/register"><a className="text-white text-lg">Register</a></Link>
+    
   
-
+  { user?.email ?  <>
+        
+        <div className="dropdown mr-2  md:mr-14">
+      <label tabIndex={0} className="">
+      <img className="w-10 h-10 rounded-full mx-1 lg:mx-2" src={user.photoURL} alt={user.displayName}
+       
+          />
+      </label>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-0 md:p-2   -ml-20 md:-ml-0 shadow rounded-box  w-28  ">
+        
+          
+          <div className="space-y-5 py-3 px-1">
+          <p className="text-white font-semibold font-lg">{user.displayName}</p>
+          <p><Link className="text-white font-semibold font-lg" to ="/dashboard">Dashboard</Link></p>
+          <li ><button className=" font-semibold btn bg-white border-0 border-y-4 border-orange-600 p-3 font-lg " onClick={handleSignOut}>Log out</button></li>
+    
+          </div>      
+        
+    
+        
+      </ul>
+    </div>
+            
+        </> 
+        :
+        <Link to = "/register"><a className="text-white text-lg">Register</a></Link>
+       }
+       
 
   </div>
 </div>
