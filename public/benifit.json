@@ -1,0 +1,18 @@
+[
+    {
+      "userType": "Business Analysts",
+      "description": "Tailored tools and features to streamline workflow, manage complex tasks, and enhance analytical processes."
+    },
+    {
+      "userType": "Project Managers",
+      "description": "Intuitive project management tools for coordinating tasks, tracking progress, and overseeing project timelines."
+    },
+    {
+      "userType": "Team Collaborators",
+      "description": "Efficient collaboration tools to foster teamwork, ensuring alignment and productivity across departments."
+    },
+    {
+      "userType": "Entrepreneurs & Solopreneurs",
+      "description": "Adaptable platform to manage priorities and boost productivity, catering to individual work styles."
+    }
+  ]

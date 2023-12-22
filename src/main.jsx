@@ -14,6 +14,9 @@ import Review from './Pages/Review/Review';
 import AuthProvider from './Provider/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import DashboardLayOut from './LayOut/DashboardLayOut';
+import ManageTask from './Pages/ManageTask/ManageTask';
+import Profile from './Pages/Profile/Profile';
+import AddTask from './Pages/AddTask/AddTask';
 
 const router = createBrowserRouter([
   {
@@ -46,8 +49,24 @@ const router = createBrowserRouter([
   },
   {
     path: "dashboard",
-    element: <PrivateRoute><DashboardLayOut></DashboardLayOut></PrivateRoute>
+    element: <PrivateRoute><DashboardLayOut></DashboardLayOut></PrivateRoute>,
+    children: [
+      {
+        path: "/dashboard",
+        element: <PrivateRoute><ManageTask></ManageTask></PrivateRoute>
+      },
+      {
+        path: "dashboard/profile",
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
+        path: "dashboard/addtask",
+        element: <PrivateRoute><AddTask></AddTask></PrivateRoute>
+      },
+    ]
+
   },
+  
 ]);
 
 
