@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "username": "Sarah123",
+      "rating": 4.5,
+      "comment": "This platform has revolutionized the way our team handles tasks. It's intuitive and incredibly efficient. Highly recommended for business analysts!",
+      "date": "2023-10-15",
+      "img": "https://i.ibb.co/87pP9cN/personnel-image-4483.jpg"
+    },
+    {
+      "id": 2,
+      "username": "JohnDoe456",
+      "rating": 5,
+      "comment": "A game-changer for our project management! It's user-friendly and adaptable, making our tasks a breeze to organize. Great for analytical minds!",
+      "date": "2023-09-28",
+      "img": "https://i.ibb.co/9vcZfMt/be-the-most-interesting.jpg"
+    },
+    {
+      "id": 3,
+      "username": "AnalyticalMind22",
+      "rating": 4,
+      "comment": "Impressive features and a sleek interface. It's helped our team immensely in handling complex projects efficiently. Solid tool for analysts!",
+      "date": "2023-08-05",
+      "img": "https://i.ibb.co/H44spXY/360-F-302884605-actpip-Od-POQHDTn-Ftp4zg4-Rtl-Wzh-OASp.jpg"
+    },
+
+    {
+      "id": 4,
+      "username": "TaskMaster9000",
+      "rating": 5,
+      "comment": "Absolutely fantastic! This platform has streamlined our workflow and boosted productivity. A must-have for any business analyst!",
+      "date": "2023-07-12",
+      "img": "https://i.ibb.co/Mfqg3X0/images-q-tbn-ANd9-Gc-REB7-FC1k3nx-OMlq-RHPWG-j6m-XUcys-RIgm1-GA-usqp-CAU.jpg"
+    },
+    {
+      "id": 5,
+      "username": "EfficiencyGuru77",
+      "rating": 4.5,
+      "comment": "Excellent tool for organizing tasks and projects. It's enhanced our team's efficiency and collaboration. Perfect for business analysts!",
+      "date": "2023-06-19",
+      "img": "https://i.ibb.co/zZs8jtz/images-q-tbn-ANd9-Gc-Rxkpd0-Ckaqb-EEpz-Hu-TQSU-ot1hl-Oc-Ul1-IS50r-Mg-ZUc-Fvg4i-O6j-PYUPWYA6a5f4-Va4.jpg"
+    },
+    {
+      "id": 6,
+      "username": "BusinessTasker55",
+      "rating": 4,
+      "comment": "Great platform with helpful features. It has positively impacted our project outcomes. Ideal for analytical professionals!",
+      "date": "2023-05-02",
+      "img":" https://i.ibb.co/87pP9cN/personnel-image-4483.jpg"
+    }
+  ]
