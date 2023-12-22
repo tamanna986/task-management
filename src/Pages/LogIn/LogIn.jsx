@@ -54,13 +54,13 @@ const LogIn = () => {
             // axiosPublic.post('/users', userInfo)
             // .then(res =>{
             //     console.log(res.data);
-            //     Swal.fire({
-            //       position: 'top-end',
-            //       icon: 'success',
-            //       title: 'Log In Sucessful',
-            //       showConfirmButton: false,
-            //       timer: 1500
-            //     })
+                Swal.fire({
+                  position: 'top-end',
+                  icon: 'success',
+                  title: 'Log In Sucessful',
+                  showConfirmButton: false,
+                  timer: 1500
+                })
             //   //      // to go to desired page using navigate
             //   navigate(from, { replace: true });
             //     navigate('/');
